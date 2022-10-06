@@ -20,7 +20,7 @@ function tellMe(joke){
             c: 'mp3',
             f: '44khz_16bit_stereo',
             ssml: false
-    });
+    }); 
 }
 
 // Get Jokes from API
@@ -35,7 +35,7 @@ async function getJokes(){
         } else {
             joke = data.joke;
         } 
-        // 
+        // Pass text to Speech
         tellMe(joke);
         // Disable button 
         toggleButton();
